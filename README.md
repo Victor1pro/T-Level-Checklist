@@ -168,12 +168,12 @@ Cover:
 - [ ] Data Storage & Access 
     - [ ] Digrams use: Flowcharts, PseudoCode
 - [ ] APIs / Integrations
-    - [ ] Frontend file structure (Tree File structure)
-    - [ ] API Backend file structure (Tree File structure)
+    - [ ] Frontend file structure (Tree File structure, Package Diagram)
+    - [ ] API Backend file structure (Tree File structure. Package Diagram)
     - [ ] API Backend Diagram (UML: Sequence Diagram)
 - [ ] Data Flow Between Components
     - [ ] Data transmission: Data flow Diagram level 0, 1 & Sequence Diagram: Shows how data moves between Components
-    - [ ] Data Models: Class Diagram: Ideal for represneting Entities, attributes & Relationship
+    - [ ] Data Models: Class Diagram: Ideal for representing Entities, attributes & Relationship
     - [ ] Data Processing: Activity Diagram: Shows transformations, branching, validation steps
     - [ ] Communication Diagram: Data Dictionary, Use Case Diagram
 - [ ] Deployment Environment (cloud / local / hybrid): Deployment Diagram
@@ -184,7 +184,7 @@ Cover:
 - [ ] Authentication: Utils Folder in backend (JSON webtokens, oauth2)
 - [ ] Encryption (Hashing)
 - [ ] Secure Data Transmission (Protected Routes & Controller Logic, Cookies)
-- [ ] Validation Techniques (Javascript, )
+- [ ] Validation Techniques (Javascript, oauth2)
 
 ---
 
