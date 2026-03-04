@@ -23,17 +23,17 @@ Cover:
 - Note relevant lawaws
 
 
-### **Business Context**
+### **Business Context** (1 Hour)
 - - [ ] Overview of the organisation - What they do and offer
-  - [ ] Overview of the scenario problem - What are the problem of their current system
+- - [ ] Overview of the scenario problem - What are the problem of their current system
 - - [ ] Intended users -  Who are the user that interact with the system
-  - [ ] Current challenges
+- - [ ] Current challenges
 
 
-### **Busines Requirements Plan & Documentation**
+### **Busines Requirements Plan & Documentation** (1.5 Hours)
 - - [ ] https://assets.asana.biz/m/2dcf4dfc471895ad/original/Business-Requirements-Document-Template-PDF.pdf
 - - [ ] Constraints
-  - [ ] time, budget, deadlines, resources, security and compliance
+- - [ ] time, budget, deadlines, resources, security and compliance
 
 ### **Empathy Mapping**
 - - [ ] Create empathy maps for the main user groups (e.g., customers, support agents, managers). Each map should include:
@@ -63,7 +63,7 @@ Cover:
 
 
 ### **Stakeholders & Stakeholders Map** 
-- - [ ] Discover the types of stakeholders in the proposal sector
+- - [ ] Discover the types of stakeholders in the proposal sector their interest & Influence
 - - [ ] Discuss why this stakeholder is important and how will they influence and affect the decision or motive you make.
 - - [ ] Create a stakeholder map (Use canva or Word)
 
@@ -189,7 +189,7 @@ Cover:
 ---
 
 # 🎨 Visual Interface Design
-- [ ] Wireframes Created
+- [ ] Wireframes Created (Use Figma)
   - [ ] Effective Whitespace
   - [ ] Clear Hierarchy
   - [ ] Visually Appealing Layout
@@ -240,11 +240,15 @@ Cover:
 - [ ] Security Testing
 - [ ] Crowd Testing
 - [ ] Unit Testing
-- [ ] Accessibility Testing
+- [ ] Accessibility Testing (Use Coolors Colour Contrast)
 - [ ] Acceptance Testing
 - [ ] Alpha Testing
 - [ ] Beta Testing
+- [ ] Errorneous Testing
+- [ ] Normal Testing
+- [ ] Extreme Testing
 - [ ] Black Box Testing
+- [ ] Migrational Testing - (Perform testing in database MI=igration tables)
 - [ ] White Box / Structural Testing
 
 ---
