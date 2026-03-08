@@ -74,9 +74,31 @@ Cover:
 
 
 ### **Stakeholders & Stakeholders Map** 
-- - [ ] Discover the types of stakeholders in the proposal sector their interest & Influence
-- - [ ] Discuss why this stakeholder is important and how will they influence and affect the decision or motive you make.
-- - [ ] Create a stakeholder map (Use canva or Word)
+- [ ] Discover the types of stakeholders in the proposal sector their interest & Influence
+- [ ] Discuss why this stakeholder is important and how will they influence and affect the decision or motive you make.
+- [ ] Create a stakeholder map (Use canva or Word)
+  - [ ] 
+    - [ ]                 High Power
+                     ↑
+      Manage Closely | Keep Satisfied
+                     |
+Interest ------------+------------→
+                     |
+      Keep Informed  | Monitor
+                     ↓
+                 Low Power
+  - [ ] What each section means:
+      - [ ] Manage Closely (High Power / High Interest)
+        - [ ] Key decision makers
+        - [ ] Must be closely involved in the project
+      - [ ] Keep Satisfied (High Power / Low Interest)
+        - [ ] Important but not involved daily
+      - [ ] Keep Informed (Low Power / High Interest)
+        - [ ] Interested in project progress
+      - [ ] Monitor (Low Power / Low Interest)
+        - [ ] Minimal communication needed
+  - [ ] Stakeholders identification table template
+    - [ ] 
 
 
 ### **Functional Requirements**
@@ -90,12 +112,18 @@ Cover:
 
 
 ### **Non-Functional Requirements**
-- - [ ] What the system must do normally to functions e.g
-    - [ ] Performance
-    - [ ] Reliablity
-    - [ ] Usablity
-    - [ ] Accessibility
-    - [ ] Scalibility
+- [ ] What the system must do normally to functions e.g
+    - [ ] Performance e.g System response time, Page loading speed, Number of users supported
+    - [ ] Reliablity e.g System uptime, Error handling, Backup and recovery
+    - [ ] Usablity e.g Easy navigation, Clear interface design, Accessibility features
+    - [ ] Scalibility e.g Ability to support more users or data in the future
+    - [ ] Security e.g User authentication, Data encryption, Access control
+- [ ] Non-functional requirements table template
+    - [ ] ID e.g NFR1
+    - [ ] category e.g performance, reliability
+    - [ ] requirement description
+    - [ ] Priorty (High, medium, low)
+    - [ ] Acceptance criteria
 
 
 ### **Decomposition of Problems**
