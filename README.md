@@ -74,19 +74,18 @@ Cover:
 
 
 ### **Stakeholders & Stakeholders Map** 
-- [ ] Discover the types of stakeholders in the proposal sector their interest & Influence
 - [ ] Discuss why this stakeholder is important and how will they influence and affect the decision or motive you make.
 - [ ] Create a stakeholder map (Use canva or Word)
-  - [ ] 
-    - [ ]                 High Power
-                     ↑
-      Manage Closely | Keep Satisfied
-                     |
-Interest ------------+------------→
-                     |
-      Keep Informed  | Monitor
-                     ↓
-                 Low Power
+- [ ]               HIGH POWER
+                       ↑
+        Manage Closely | Keep Satisfied
+                       |
+LOW INTEREST -----------+----------- HIGH INTEREST
+                       |
+        Monitor        | Keep Informed
+                       ↓
+                    LOW POWER
+                 
   - [ ] What each section means:
       - [ ] Manage Closely (High Power / High Interest)
         - [ ] Key decision makers
@@ -98,7 +97,17 @@ Interest ------------+------------→
       - [ ] Monitor (Low Power / Low Interest)
         - [ ] Minimal communication needed
   - [ ] Stakeholders identification table template
-    - [ ] 
+    - [ ] Stakeholder e.g customer
+    - [ ] Role e.g main users
+    - [ ] Interest in project e.g want easy system access, need control features
+    - [ ] Influence/ power e.g (high/medium/low)
+    - [ ] Needs / Expectations e.g simple interace, reliable system, technical access
+  - [ ] Stakeholders analysis template
+    - [ ] Stakeholder e.g customer
+    - [ ] Power e.g (high/medium/low)
+    - [ ] Interest e.g (high/medium/low)
+    - [ ] Engagement/strategy e.g keep informed, Consult regularly, Keep satisfied, Manage closely
+  - [ ] Simple writing e.g Students are the primary users of the system. They have high interest because they will use the platform regularly. However, they have low decision-making power. Therefore, they should be kept informed through updates and feedback sessions.
 
 
 ### **Functional Requirements**
