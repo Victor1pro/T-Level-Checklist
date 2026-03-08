@@ -26,21 +26,24 @@ Cover:
 ### **Business Context** (1 Hour)
 - - [ ] Overview of the organisation - What they do and offer
 - - [ ] Overview of the scenario problem - What are the problem of their current system
-- - [ ] Intended users -  Who are the user that interact with the system
+- - [ ] Intended users - Who are the user that interact with the system
 - - [ ] Current challenges
 
 
-### **Busines Requirements Plan & Documentation** (1.5 Hours)
+### **Business Requirements Plan & Documentation** (1.5 Hours)
 - - [ ] https://assets.asana.biz/m/2dcf4dfc471895ad/original/Business-Requirements-Document-Template-PDF.pdf
-- - [ ] Constraints
-- - [ ] time, budget, deadlines, resources, security and compliance
+- - [ ] Constraints (Social, political, economic, supply & chain, Technological)
+- - [ ] time, budget, skills, deadlines, resources, security and compliance
 
 ### **Empathy Mapping**
 - - [ ] Create empathy maps for the main user groups (e.g., customers, support agents, managers). Each map should include:
-    - [ ] Says (What the user verbally expresses)
-    - [ ] Thinks (What concerns or motivations they have internally)
+  - [ ] For each user add: User persona: name, age, background, Role
+    - [ ] Says (What the user says out loud in interviews or conversations.)
+    - [ ] Thinks (What the user thinks but might not say directly)
     - [ ] Does (Their actions and behaviours)
     - [ ] Feels (Emotions related to the support experience)
+    - [ ] Pain (Problems the user experiences.)
+    - [ ] Gain (What would improve the user’s experience.)
 
 
 ### **User Needs analysis & Requirements**
@@ -48,7 +51,15 @@ Cover:
     - [ ] Customer Needs: 
     - [ ] Suppport Agent Needs: 
     - [ ] Manager Needs: 
-    - [ ] Business Needs & Objectives: 
+    - [ ] Business Needs & Objectives:
+- - [ ] User need analysis template
+  - [ ] Introduction
+  - [ ] Targeted User (Make 3 columns and name them(User group. Goals & challenges)
+  - [ ] Data collection methods (The survey helped identify common problems, while interviews provided deeper insights into user experiences.)
+  - [ ] Key user needs (Make 2 columns and name them (User need & Description)
+  - [ ] User Problems (list)
+  - [ ] Requirements & Recommendations (User need & Recommended solution)
+  - [ ] Conclusion
 
 
 ### **User Stories & Acceptance**
@@ -56,10 +67,10 @@ Cover:
 
 
 ### **SWOT Analysis with how it will affcet business, customer**
-- - [ ] Strengths: What are the strength of the Business (Current system & Future development)
-- - [ ] Weakness: What are the weakness of the Business (Current system & Future development)
-- - [ ] Opportunities: What are the opportunities of the Business (Current system & Future development) e.g Automated flows, Customer experince, Business goals
-- - [ ] Threats: What are the threats to the Business (Current system & Future development) e.g internal and exteranl threats.
+- [ ] Strengths: What are the strength of the Business (Current system & Future development)
+- [ ] Weakness: What are the weakness of the Business (Current system & Future development)
+- [ ] Opportunities: What are the opportunities of the Business (Current system & Future development) e.g Automated flows, Customer experince, Business goals
+- [ ] Threats: What are the threats to the Business (Current system & Future development) e.g internal and exteranl threats.
 
 
 ### **Stakeholders & Stakeholders Map** 
@@ -69,12 +80,13 @@ Cover:
 
 
 ### **Functional Requirements**
-- - [ ] What the system must do for user e.g
-    - [ ] User Management
-    - [ ] Content management
-    - [ ] Serach & Filter Functionality
-    - [ ] Notifications
-    - [ ] Security & compliances
+- [ ] Functional requirements template table
+    - [ ] ID e.g FR1
+    - [ ] Requirement name e.g Security & compliances (User Management, Content management, Serach & Filter Functionality, Notifications, Security & compliances)
+    - [ ] Description
+    - [ ] User
+    - [ ] Priorty (High, medium, low)
+    - [ ] Acceptance criteria
 
 
 ### **Non-Functional Requirements**
@@ -96,14 +108,20 @@ Cover:
 
 
 ### **KPI's & User Acceptance**
-- - [ ] include security needs, and compliance with GDPR, what would happen if not etc
+- - [ ] include security needs, and compliance with GDPR, what would happen if not etc (Business, Website)
     - [ ] Load Times
     - [ ] Error Rates
     - [ ] User Satisfaction
     - [ ] Accuracy
-    - [ ] Systsm uptimes
+    - [ ] System uptimes
 - - [ ] Clear statements of what must be true for users to accept the system. e.g
-    - [ ] 
+- - [ ] KPIs must be measures for all user types e.g business metrics, user satisafaction
+  - [ ] Reports, diagrams which should highlght contrast & similarities in data
+  - [ ] Review critiria and how KPIs wil be collected and tracked
+  - [ ] Idetify and map KPIs data from data
+  - [ ] Define how KPI daa add value to the scenario
+  - [ ] Describe how KPis at will be commnicated among stakeolders
+  - [ ] Define specific set points, targets and alarm points for scenarios
 
 
 ### **Proposed Solution**
