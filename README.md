@@ -66,7 +66,7 @@ Cover:
 - - [ ] Create a table with 4 Columns: Use this format (“As a [Type of user], I want [goal], so that [Benefit], Acceptance Criteria)
 
 
-### **SWOT Analysis with how it will affcet business, customer**
+### **SWOT Analysis with how it will affect business, customer**
 - [ ] Strengths: What are the strength of the Business (Current system & Future development)
 - [ ] Weakness: What are the weakness of the Business (Current system & Future development)
 - [ ] Opportunities: What are the opportunities of the Business (Current system & Future development) e.g Automated flows, Customer experince, Business goals
@@ -107,7 +107,7 @@ LOW INTEREST -----------+----------- HIGH INTEREST
     - [ ] Power e.g (high/medium/low)
     - [ ] Interest e.g (high/medium/low)
     - [ ] Engagement/strategy e.g keep informed, Consult regularly, Keep satisfied, Manage closely
-  - [ ] Simple writing e.g Students are the primary users of the system. They have high interest because they will use the platform regularly. However, they have low decision-making power. Therefore, they should be kept informed through updates and feedback sessions.
+  - [ ] Simple writing Reportt e.g Students are the primary users of the system. They have high interest because they will use the platform regularly. However, they have low decision-making power. Therefore, they should be kept informed through updates and feedback sessions.
 
 
 ### **Functional Requirements**
