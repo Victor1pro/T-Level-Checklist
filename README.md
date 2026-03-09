@@ -45,7 +45,7 @@ Links:
 ### **Empathy Mapping**
 - - [ ] Create empathy maps for the main user groups (e.g., customers, support agents, managers). Each map should include:
   - [ ] For each user add: User persona: name, age, background, Role
-    - [ ] Says (What the user says out loud in interviews or conversations.)
+    - [ ] Says (What the user says out loud in interviews or conversations)
     - [ ] Thinks (What the user thinks but might not say directly)
     - [ ] Does (Their actions and behaviours)
     - [ ] Feels (Emotions related to the support experience)
@@ -77,7 +77,7 @@ Links:
 - [ ] Strengths: What are the strength of the Business (Current system & Future development)
 - [ ] Weakness: What are the weakness of the Business (Current system & Future development)
 - [ ] Opportunities: What are the opportunities of the Business (Current system & Future development) e.g Automated flows, Customer experince, Business goals
-- [ ] Threats: What are the threats to the Business (Current system & Future development) e.g internal and exteranl threats.
+- [ ] Threats: What are the threats to the Business (Current system & Future development) e.g internal and external threats.
 
 
 ### **Stakeholders & Stakeholders Map** 
@@ -120,7 +120,7 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 ### **Functional Requirements**
 - [ ] Functional requirements template table
     - [ ] ID e.g FR1
-    - [ ] Requirement name e.g Security & compliances (User Management, Content management, Serach & Filter Functionality, Notifications, Security & compliances)
+    - [ ] Requirement name e.g Security & compliances (User Management, Content management, Search & Filter Functionality, Notifications, Security & compliances)
     - [ ] Description
     - [ ] User
     - [ ] Priorty (High, medium, low)
@@ -143,39 +143,49 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 
 
 ### **Decomposition of Problems**
-- - [ ] Break the solution into smaller logical components e.g:
-    - [ ] Subsystems
-    - [ ] Features
-    - [ ] Data Processes
-    - [ ] Interfaces
-    - [ ] Intercations
+- [ ] Break the solution into smaller logical components e.g:
+    - [ ] Subsystems e.g account management, catergorisation of user/services, database, stock & inventory management, analytics dashboards, System Integration & User Interface Layer
+    - [ ] Features e.g webpages, search and filter, tracking
+    - [ ] Data Processes e.g store user credentials, validation of user login sessions, update profile
+    - [ ] Interfaces e.g website registration, login forms
+    - [ ] Intercations e.g connect with database, connects with dashboards
 
 
-### **KPI's & User Acceptance**
-- - [ ] include security needs, and compliance with GDPR, what would happen if not etc (Business, Website)
-    - [ ] Load Times
-    - [ ] Error Rates
-    - [ ] User Satisfaction
-    - [ ] Accuracy
-    - [ ] System uptimes
-- - [ ] Clear statements of what must be true for users to accept the system. e.g
-- - [ ] KPIs must be measures for all user types e.g business metrics, user satisafaction
-  - [ ] Reports, diagrams which should highlght contrast & similarities in data
-  - [ ] Review critiria and how KPIs wil be collected and tracked
-  - [ ] Idetify and map KPIs data from data
-  - [ ] Define how KPI daa add value to the scenario
-  - [ ] Describe how KPis at will be commnicated among stakeolders
-  - [ ] Define specific set points, targets and alarm points for scenarios
+### **KPI's**
+- [ ] System Performance, Security and KPI Monitoring Security and GDPR Compliance
+- [ ] System Requirements (Reliable,  performance, high avaliability)
+  - [ ] Explain what the system must do proper, risk management, testing and monitoring
+  - [ ] reliable performance, positive user experience load times pages dashboards under quick access to . slow load can its causes
+  - [ ] Error rates must be kept low for system maintenace. errors  like failed incorrect led to inaccuarate data. Regular testing and monitorisation to reduce errors
+  - [ ] high avalibility uptime of system 99.5% management of users. downtiems can cause
+- [ ] Key Performance Indicators (KPIs)
+  - [ ] Types of KPIs (Business, User-focused & ret) each shoudl be a paragraph
+  - [ ] Data Collection and KPI Tracking (Data gotten from database & backend automatically)
+  - [ ] Example report: data used calcuate KPIs will be collected automatically through the system backend and database. the system wil track metrics such as repsnse times user activity. the data wil be stored and analysed to generate report that measure system performance.
+  - [ ] Define how KPI data add value to the scenario (e.g in relation to technical and business stakeholders give example)
+  - [ ] Communication of KPI to stakeholders (use of report, diagrams form system performance for optimisation)
+  - [ ] KPI Targets and Alert Thresholds ()
 
 
 ### **Proposed Solution**
 - - [ ] **Description of Proposed Solution shoudd be in paragraphs** 
     - [ ] Architecture (The layout & design of old and future system)
-    - [ ] Technologies used (What type of API framework, Frontend, Backend Technologies and give what they do and why you have chosen them)
-    - [ ] Data Flows (The way data will be transimitted between clintn & server)
+      - [ ] The current system functions its constarints to the business and its customers
+      - [ ] The proposed architecture (presentation layer for access to platform, application layer for for core functions like user accounts and data layer for store information like product information or service, user nformation)
+    - [ ] Technologies used (and give what they do and why you have chosen them)
+      - [ ] The Frontend tools (HTML5, CSS, JvaScript) system wenb development
+      - [ ] The backend tools used for serve-side framework (Fastapi). backend manage authentication, proccessing and updates
+      - [ ] API: allow communication between frontend & Backend components, API process request such as retriving placing udating. use of api structure
+      - [ ] Database system: such as sqlite3 for developemnt and produtin postgres. To store user credentials, inventory management
+    - [ ] Data Flows (The way data will be transimitted between client & server thrugh secure API clients)
+      - [ ] For example: (How does the client send a request for a product info and when an order is placed)
+      - [ ] For example: (How does it relate to retail)
     - [ ] Interfaces, Dashboards, Analytics (The user device)
+      - [ ] system provide interface based on type of user e.g customer 
+      - [ ] Reatier access to dashboards management
     - [ ] Hardware & Software used e.g API Framework, cloud hosting, Databases, Authentication Tools.
-    - [ ] How it fist ther Scenario
+      - [ ] Paragraph: Where the system will run, its benefits, (Development slit3 and production postgres)
+    - [ ] How it fits the Scenario
 
 
 ### **Justification**
