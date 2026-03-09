@@ -22,6 +22,13 @@ Cover:
 - Include security considerations - encryption, secure data storage etc.
 - Note relevant lawaws
 
+Links:
+- https://www.geeksforgeeks.org/blogs/empathy-mapping/
+- https://asana.com/resources/swot-analysis
+- https://www.qualtrics.com/articles/strategy-research/user-personas/
+- https://www.geeksforgeeks.org/software-engineering/functional-vs-non-functional-requirements/
+- https://www.geeksforgeeks.org/operating-systems/what-is-problem-decomposition/
+- https://www.investopedia.com/terms/k/kpi.asp
 
 ### **Business Context** (1 Hour)
 - - [ ] Overview of the organisation - What they do and offer
