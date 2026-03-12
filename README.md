@@ -275,6 +275,7 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 - [ ] Data Dictionary e.g 
 - [ ] Data validation rules
 - [ ] Data protection considerations (GDPR)
+- [ ] Data Models (Class Diagram)
 
 ### Algorithms & Logic
 - [ ] Flowcharts
@@ -305,10 +306,35 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 
 
 ### System Processes
-- [ ] Use Case Diagram: Customer, retailer & Manager /admin
-- [ ] Activity Diagram
-- [ ] Sequence Diagram (API request flow)
-- [ ] Communication Diagram
+- [ ] Use Case Diagram: (what action clients perform in the system):
+  - [ ] User
+    - [ ] Browsing products
+    - [ ] login
+    - [ ] Register
+    - [ ] View product history
+    - [ ] Product collection / delivery
+    - [ ] Track order
+    - [ ] Place order
+    - [ ] Update profile
+  - [ ] Admin:
+    - [ ] Manage users (activate decativate)
+    - [ ] Manage products (add, edit, delete)
+    - [ ] Manage categories
+    - [ ] Manage Inventory
+    - [ ] View system reports
+  - [ ] Retailers:
+    - [ ] Add products
+    - [ ] Update prodcuts details
+    - [ ] Manage Stock levels
+    - [ ] View orders from customers
+    - [ ] Confirm shipping
+    - [ ] Update order status
+    - [ ] View sals reports
+- [ ] Activity Diagram: (Busienss flow, API request Processing steps, workflows)
+  - [ ] Inventry management
+- [ ] Sequence Diagram (API request flow & system-client system intercation)
+  - [ ] Login User
+- [ ] Data Transmission (Communication Diagram)
 - [ ] Ordering system process description
 - [ ] Login process description
 
