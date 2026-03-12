@@ -222,172 +222,136 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 
 # 📘 Activity B Checklist — Design & Development
 
-## General Design Guidance
-- [ ] Use Activity A research to guide all design decisions
-- [ ] Show multiple design approaches (not just one)
-- [ ] Clearly label all diagrams
-- [ ] Keep diagrams simple and readable
-- [ ] Include accessibility considerations throughout
-- [ ] Address security, compliance, and data protection in the design
-- [ ] Maintain consistency with user needs and acceptance criteria
+### Visual & Interface Design
+- [ ] Logo design
+  - [ ] Inspiration + justification:
+    - [ ] The logo was inspired by __________________. I chose this style because __________________ and it reflects the brand values of __________________.
+  - [ ] Accessibility considerations:
+    - [ ] The logo uses high contrast colours and a simple shape so it remains visible and recognisable for users with visual impairments.
+- [ ] Colour scheme:
+  - [ ] I selected this colour scheme because __________________. Research into the __________________ industry shows that these colours are commonly used to represent __________________ and create a feeling of __________________.
+  - [ ] Colour sceheme: 3 columns (Colour, Hex Codes & Purpose) e.g Blue, #1A73E8, buttons, highlights
+  - [ ] Array
+  - [ ] Object
+  - [ ] WCAG contrast checks (as shown in PDF) use coolors & webaim accessibility
+- [ ] Typography choices:
+  - [ ] Primary font: Inter (Justify & inspiration) think about readability
+  - [ ] Secondary font: Roboto (Justify & inspiration) think about readability
+- [ ] Navigation bar design
+- [ ] Full UI wireframes (Figma)
+  - [ ] Home page
+  - [ ] checkout
+  - [ ] product listing
+  - [ ] Product details
+  - [ ] delivery / collection scheduling
+  - [ ] Login / Register
+  - [ ] order tracking
+  - [ ] Admin stock dashboard
+  - [ ] Admin order management
+- [ ] User flow diagrams
+- [ ] Accessibility features (ARIA labels, contrast, layout spacing)
 
----
-
-# 🏗️ System Architecture
-- [ ] Architecture Diagram
-- [ ] Client / Server Components ()
-    - [ ] Diagrams use: Server(Package Diagram, ERD) & Client(Class Diagram, Object Diagram, ERD )
-- [ ] Data Storage & Access 
-    - [ ] Digrams use: Flowcharts, PseudoCode
-- [ ] APIs / Integrations
-    - [ ] Frontend file structure (Tree File structure, Package Diagram)
-    - [ ] API Backend file structure (Tree File structure. Package Diagram)
-    - [ ] API Backend Diagram (UML: Sequence Diagram)
-- [ ] Data Flow Between Components
-    - [ ] Data transmission: Data flow Diagram level 0, 1 & Sequence Diagram: Shows how data moves between Components
-    - [ ] Data Models: Class Diagram: Ideal for representing Entities, attributes & Relationship
-    - [ ] Data Processing: Activity Diagram: Shows transformations, branching, validation steps
-    - [ ] Communication Diagram: Data Dictionary, Use Case Diagram
-- [ ] Deployment Environment (cloud / local / hybrid): Deployment Diagram
-- [ ] Developement Plan (Gantt Chart: MS project)
+### System Architecture
+- [ ] High‑level architecture diagram
+- [ ] Client-side structure (React / HTML / CSS / JS)
+- [ ] Server-side structure (Node / Express / Python / PHP etc.)
+- [ ] API structure
+- [ ] Backend file structure
+- [ ] Frontend file structure
+- [ ] Deployment diagram (local → production)
+- [ ] Technology stack justification
 
 
-## Security Controls
-- [ ] Authentication: Utils Folder in backend (JSON webtokens, oauth2)
-- [ ] Encryption (Hashing)
-- [ ] Secure Data Transmission (Protected Routes & Controller Logic, Cookies)
-- [ ] Validation Techniques (Javascript, oauth2)
-
----
-
-# 🎨 Visual Interface Design
-- [ ] Wireframes Created (Use Figma)
-  - [ ] Effective Whitespace
-  - [ ] Clear Hierarchy
-  - [ ] Visually Appealing Layout
-- [ ] Accessibility Features Included such as use "aria-labels"
-- [ ] Annotations Explaining Design Decisions
-- [ ] User Journey / User Flow
-- [ ] Navigation Flow / Sitemap
-- [ ] Front-End Requirementsn & File structure
-- [ ] Back-End Requirements & File structure
-
----
-
-# 🔐 Data Protection
-- [ ] Data Retention Policy
-- [ ] Storage Location (e.g., cloud region) In development sqlite3 & Production - Postgres 
-- [ ] Access Control Levels - admin or User or Visitor
-- [ ] Encryption Approach (at rest and in transit and in Motion)
-
----
-
-# 🗄️ Data Design
+### Data Design & Requirements
 - [ ] Entity Relationship Diagram (ERD)
-- [ ] Use Case Diagram & UMLs
-- [ ] Data Dictionary
-- [ ] Data Flow Diagram (DFD)
-- [ ] Data Validation Rules
-- [ ] Data Protection Considerations
+  - [ ] ORDER e.g 
+  - [ ] USER 
+  - [ ] ORDER_ITEM
+  - [ ] PRODUCT
+  - [ ] STOCK_LOG
+  - [ ] NUTRITIONAL_INFO
+  - [ ] USER_ACTIVITY_LOG
+- [ ] Data Flow Diagram (DFD Level 0 + Level 1)
+- [ ] Data Dictionary e.g 
+- [ ] Data validation rules
+- [ ] Data protection considerations (GDPR)
 
----
-
-# ⚙️ System Processes & Algorithms
+### Algorithms & Logic
 - [ ] Flowcharts
-- [ ] Pseudocode
-- [ ] Input–Process–Output Tables
-- [ ] Error Handling
-- [ ] Try & Exception Handling
-- [ ] Process Logic Descriptions (Async, Await, Fetch)
+  - [ ] Register User account (full)
+  - [ ] Login User account (full)
+  - [ ] Making an order
+  - [ ] payment 
+- [ ] Pseudocode for:
+  - [ ] Login
+  - [ ] Registration
+  - [ ] Order product
+  - [ ] scheduling & trcaing of product
+- [ ] Input–Process–Output tables
+- [ ] Error handling logic
+- [ ] Validation logic
 
----
 
-# 🧪 Testing Strategy
-- [ ] Functionality Testing
-- [ ] Usability Testing
-- [ ] Interface Testing
-- [ ] Database Testing
-- [ ] Compatibility Testing
-- [ ] Performance Testing
-- [ ] Security Testing
-- [ ] Crowd Testing
-- [ ] Unit Testing
-- [ ] Accessibility Testing (Use Coolors Colour Contrast)
-- [ ] Acceptance Testing
-- [ ] Alpha Testing
-- [ ] Beta Testing
-- [ ] Errorneous Testing
-- [ ] Normal Testing
-- [ ] Extreme Testing
-- [ ] Black Box Testing
-- [ ] Migrational Testing - (Perform testing in database MI=igration tables)
-- [ ] White Box / Structural Testing
+### Security Controls
+- [ ] Authentication (JWT / sessions)
+- [ ] Password hashing
+- [ ] Protected routes
+- [ ] Input validation
+- [ ] Secure data transmission
+- [ ] Access control levels (user / admin)
+- [ ] GDPR compliance
+- [ ] Data minimisation
+- [ ] Privacy by design
 
----
 
-# ⚖️ Security, Legal & Compliance
-- [ ] GDPR Compliance
-- [ ] Data Minimisation
-- [ ] User Consent Management
-- [ ] Access Control & Authentication
-- [ ] Cyber Threat Mitigation
-- [ ] Sector-Specific Regulations (if applicable)
-- [ ] Privacy by Design Principles
+### System Processes
+- [ ] Use Case Diagram: Customer, retailer & Manager /admin
+- [ ] Activity Diagram
+- [ ] Sequence Diagram (API request flow)
+- [ ] Communication Diagram
+- [ ] Ordering system process description
+- [ ] Login process description
 
----
 
-# 🖥️ Technical Specifications
-- [ ] Technology Stack
-- [ ] Software Requirements
-- [ ] Hardware Requirements
-- [ ] APIs / Endpoints
-- [ ] Integration Requirements
-- [ ] Performance Requirements
-- [ ] Scalability Considerations
-- [ ] Reliability / Availability Targets
+### Testing Strategy
+- [ ] Functional testing
+  - [ ] Unit testing
+  - [ ] Integration testing
+  - [ ] System testing
+- [ ] Non‑functional testing
+  - [ ] Compatibility testing
+  - [ ] Performance testing
+  - [ ] Usability testing
+  - [ ] Accessibility testing
+- [ ] Database testing
+- [ ] Security testing
+- [ ] Error testing (normal, extreme, erroneous)
+- [ ] Alpha testing
+- [ ] Beta testing
+- [ ] Test data tables
+- [ ] Test evidence screenshots
 
----
 
-# 📊 Non-Functional Requirements Mapping
-- [ ] Performance Targets
-- [ ] Security Requirements
-- [ ] Accessibility Requirements
-- [ ] Reliability Targets
-- [ ] Usability Requirements
-- [ ] Maintainability Considerations
+### Technical Specifications
+- [ ] Hardware requirements
+- [ ] Software requirements
+- [ ] API endpoints
+- [ ] Integration requirements
+- [ ] Performance requirements
+- [ ] Scalability considerations
+- [ ] Reliability targets
 
----
 
-# 💡 Design Justification
-- [ ] Link to Client Requirements
-- [ ] Link to User Needs
-- [ ] Link to Constraints (time, budget, resources)
-- [ ] Accessibility Justification
-- [ ] Security Justification
-- [ ] Technical Justification
-- [ ] Alternatives Considered and Rejected
-- [ ] Risk Reduction Explanation
+### Non‑Functional Requirements
+- [ ] Performance
+- [ ] Security
+- [ ] Accessibility
+- [ ] Reliability
+- [ ] Maintainability
+- [ ] Usability
 
----
 
-# 📎 Appendices
-- [ ] Early Design Ideas
-- [ ] Rough Sketches
-- [ ] Research References
-- [ ] Standards References (e.g., WCAG, GDPR)
-- [ ] Extended Diagrams
-- [ ] Supporting Documentation
-
----
-
-# 🗣️ Communication
-- [ ] Stakeholder Meetings
-- [ ] Progress Reports
-- [ ] Documentation Strategy
-- [ ] Version Control (e.g., Git)
-- [ ] Feedback Methods
-- [ ] Change Management Process
-
+### Design Justification
 
 
 ## Activity Task2 Checklist
