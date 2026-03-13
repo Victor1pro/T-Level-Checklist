@@ -377,7 +377,32 @@ LOW INTEREST -----------+----------- HIGH INTEREST
     - [ ] last_location
     - [ ] updated_at
     - [ ] Relationship
-      - [ ] Tracking belongs to Shippng
+      - [ ] Tracking belongs to Shipping
+- [ ] System Procesess
+  - [ ] Use Case Diagram: (what action clients perform in the system):
+    - [ ] User
+      - [ ] Browsing products
+      - [ ] login
+      - [ ] Register
+      - [ ] View product history
+      - [ ] Product collection / delivery
+      - [ ] Track order
+      - [ ] Place order
+      - [ ] Update profile
+    - [ ] Admin:
+      - [ ] Manage users (activate decativate)
+      - [ ] Manage products (add, edit, delete)
+      - [ ] Manage categories
+      - [ ] Manage Inventory
+      - [ ] View system reports
+    - [ ] Retailers:
+      - [ ] Add products
+      - [ ] Update prodcuts details
+      - [ ] Manage Stock levels
+      - [ ] View orders from customers
+      - [ ] Confirm shipping
+      - [ ] Update order status
+      - [ ] View sals reports
 ### Algorithms & Logic
 - [ ] Flowcharts
   - [ ] Register User account (full)
@@ -407,30 +432,7 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 
 
 ### System Processes
-- [ ] Use Case Diagram: (what action clients perform in the system):
-  - [ ] User
-    - [ ] Browsing products
-    - [ ] login
-    - [ ] Register
-    - [ ] View product history
-    - [ ] Product collection / delivery
-    - [ ] Track order
-    - [ ] Place order
-    - [ ] Update profile
-  - [ ] Admin:
-    - [ ] Manage users (activate decativate)
-    - [ ] Manage products (add, edit, delete)
-    - [ ] Manage categories
-    - [ ] Manage Inventory
-    - [ ] View system reports
-  - [ ] Retailers:
-    - [ ] Add products
-    - [ ] Update prodcuts details
-    - [ ] Manage Stock levels
-    - [ ] View orders from customers
-    - [ ] Confirm shipping
-    - [ ] Update order status
-    - [ ] View sals reports
+
 - [ ] Activity Diagram: (Busienss flow, API request Processing steps, workflows)
   - [ ] Inventory management
     - [ ] start
