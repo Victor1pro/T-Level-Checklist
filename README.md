@@ -275,7 +275,7 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 - [ ] Data Dictionary e.g 
 - [ ] Data validation rules
 - [ ] Data protection considerations (GDPR)
-- [ ] Data Models (Class Diagram)
+- [ ] Data Models: Database structure (Class Diagram)
 
 ### Algorithms & Logic
 - [ ] Flowcharts
@@ -331,12 +331,28 @@ LOW INTEREST -----------+----------- HIGH INTEREST
     - [ ] Update order status
     - [ ] View sals reports
 - [ ] Activity Diagram: (Busienss flow, API request Processing steps, workflows)
-  - [ ] Inventry management
+  - [ ] Inventory management
+    - [ ] start
+    - [ ] Receive stock update (from admin, retailer)
+    - [ ] Check current inventory level
+    - [ ] Decision: Is stock avaiable?
+      - [ ] Yes - Update inventory quantity
+      - [ ] No - Trigger reorder process
+    - [ ] If order triggered -> Create purchase order
+    - [ ] Receive new stock from supplier
+    - [ ] Verify received items
+    - [ ] Update inventory records
+    - [ ] Notify system / dashboard
+    - [ ] End
+  - [ ] Shipping & order fulfilment
 - [ ] Sequence Diagram (API request flow & system-client system intercation)
   - [ ] Login User
+  - [ ] Register User
+  - [ ] Place Order
+  - [ ] track order
+  - [ ] Paying
+  - [ ] Shipping
 - [ ] Data Transmission (Communication Diagram)
-- [ ] Ordering system process description
-- [ ] Login process description
 
 
 ### Testing Strategy
