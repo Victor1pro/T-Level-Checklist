@@ -272,11 +272,112 @@ LOW INTEREST -----------+----------- HIGH INTEREST
   - [ ] NUTRITIONAL_INFO
   - [ ] USER_ACTIVITY_LOG
 - [ ] Data Flow Diagram (DFD Level 0 + Level 1)
-- [ ] Data Dictionary e.g 
+- [ ] Data Dictionary e.g
+  - [ ] 
 - [ ] Data validation rules
 - [ ] Data protection considerations (GDPR)
 - [ ] Data Models: Database structure (Class Diagram)
-
+  - [ ] User
+    - [ ] user_id
+    - [ ] name
+    - [ ] email
+    - [ ] password
+    - [ ] address
+    - [ ] relationship
+      - [ ] A user has many Orders     
+      - [ ] A user has a Cart
+  - [ ] Product
+    - [ ] product_id
+    - [ ] name
+    - [ ] description
+    - [ ] price
+    - [ ] nutritional_info
+    - [ ] Stock_quantity
+    - [ ] Relationship
+      - [ ] A product belongs to a catergory
+      - [ ] A product appears in many Orderitems
+      - [ ] A product appars in many Cartitems
+  - [ ] Category
+    - [ ] catergory_id
+    - [ ] name
+    - [ ] Relationship
+      - [ ] A catergory contains many products
+  - [ ] Order
+    - [ ] order_id
+    - [ ] order_date
+    - [ ] status
+    - [ ] total_amount
+    - [ ] Relationship
+      - [ ] An order belongs to a User
+      - [ ] An order has many order item
+  - [ ] OrderItem
+    - [ ] order_item_id
+    - [ ] quantity
+    - [ ] price
+    - [ ] Relationship
+      - [ ] OrderItem belongs to Order
+      - [ ] OrderItem belongs to Product
+  - [ ] Cart
+    - [ ] cart_id
+    - [ ] created_at
+    - [ ] Relationship
+      - [ ] A cart belongs to a User
+      - [ ] A cart has many CartItems
+  - [ ] CartItem
+    - [ ] cart_item_id
+    - [ ] quantity
+    - [ ] relationship
+      - [ ] CartItem belongs to Cart
+      - [ ] CartItem belongs to Product
+  - [ ] Inventory
+    - [ ] inventory_id
+    - [ ] stock_level
+    - [ ] reorder_level
+    - [ ] relationship
+      - [ ] Inventory belongs to Product
+  - [ ] Admin
+    - [ ] admin_id
+    - [ ] name
+    - [ ] email
+    - [ ] role
+    - [ ] Relationship
+      - [ ] Admin manages Products
+      - [ ] Admin manages Users
+      - [ ] Admin manages Catergories
+  - [ ] Retailer
+    - [ ] retailer_id
+    - [ ] name
+    - [ ] email
+    - [ ] store_name
+    - [ ] Relationship
+      - [ ] Retailer owns many Products
+      - [ ] Retailer view Orders from their products
+      - [ ] Retailer Upates inventory
+  - [ ] Payment
+    - [ ] payment_id
+    - [ ] method (card, paypal)
+    - [ ] status
+    - [ ] amount
+    - [ ] transaction_date
+    - [ ] Relationship
+      - [ ] Payment belongs to Order
+  - [ ] Shipping
+    - [ ] shipping_id
+    - [ ] address
+    - [ ] shipping_method
+    - [ ] shipping_date
+    - [ ] delivery_date
+    - [ ] status
+    - [ ] relationship
+      - [ ] Shipping belongs to Order
+  - [ ] Tracking
+    - [ ] tracking_id
+    - [ ] tracking_number
+    - [ ] status
+    - [ ] last_location
+    - [ ] updated_at
+    - [ ] Relationship
+      - [ ] Tracking belongs to Shippng
 ### Algorithms & Logic
 - [ ] Flowcharts
   - [ ] Register User account (full)
