@@ -373,8 +373,49 @@ Notifications & Logs
   - [M] USER_ACTIVITY_LOG belongs to USER
 
 - [ ] Data Flow Diagram (DFD Level 0 + Level 1)
-- [ ] Data Dictionary e.g
+  - [ ] Data Flow Diagram (DFD) — Level 0 (Context Diagram)
+    External Entities
+    - Customer
+    - Admin
+    - Retailer
+    - Payment Gateway
+    - Delivery Provider
+    
+    Process
+    - Retail E‑Commerce System (Process 0)
+    
+    Data Stores (Shown conceptually at Level 0)
+    - Product Database
+    - User Database
+    - Order Database
+    - Inventory Database
+    
+    Data Flows
+    - Customer → System: Browse Products, Add to Cart, Checkout, Make Payment
+    - System → Customer: Product Info, Cart Info, Order Confirmation, Delivery Updates
+    
+    - Admin → System: Manage Products, Manage Users, Manage Categories
+    - System → Admin: Reports, Inventory Levels, User Data
+    
+    - Retailer → System: Update Inventory, View Orders, Manage Products
+    - System → Retailer: Order Notifications, Stock Alerts
+    
+    - System → Payment Gateway: Payment Request
+    - Payment Gateway → System: Payment Confirmation / Failure
+    
+    - System → Delivery Provider: Delivery Request
+    - Delivery Provider → System: Delivery Status Updates
+  - [ ] Data Flow Diagram (DFD) — Level 1 (Decomposition of Retail System)
   - [ ] 
+- [ ] Data Dictionary e.g
+  - [ ] Table name
+  - [ ] Field name
+  - [ ] Field definition
+  - [ ] Data types & length
+  - [ ] Format & validation rules
+  - [ ] Primary key (True or False)
+  - [ ] Foreign key (True or False)
+  - [ ] Sample data
 - [ ] Data validation rules
 - [ ] Data protection considerations (GDPR)
 - [ ] Data Models & Structure: Database Structure (Class Diagram)
