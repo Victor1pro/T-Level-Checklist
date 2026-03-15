@@ -377,108 +377,177 @@ Notifications & Logs
   - [ ] 
 - [ ] Data validation rules
 - [ ] Data protection considerations (GDPR)
-- [ ] Data Models & Structure: Database structure (Class Diagram)
-  - [ ] User
-    - [ ] user_id
-    - [ ] name
-    - [ ] email
-    - [ ] password
-    - [ ] address
-    - [ ] relationship
-      - [ ] A user has many Orders     
-      - [ ] A user has a Cart
-  - [ ] Product
-    - [ ] product_id
-    - [ ] name
-    - [ ] description
-    - [ ] price
-    - [ ] nutritional_info
-    - [ ] Stock_quantity
-    - [ ] Relationship
-      - [ ] A product belongs to a catergory
-      - [ ] A product appears in many Orderitems
-      - [ ] A product appars in many Cartitems
-  - [ ] Category
-    - [ ] catergory_id
-    - [ ] name
-    - [ ] Relationship
-      - [ ] A catergory contains many products
-  - [ ] Order
-    - [ ] order_id
-    - [ ] order_date
-    - [ ] status
-    - [ ] total_amount
-    - [ ] Relationship
-      - [ ] An order belongs to a User
-      - [ ] An order has many order item
-  - [ ] OrderItem
-    - [ ] order_item_id
-    - [ ] quantity
-    - [ ] price
-    - [ ] Relationship
-      - [ ] OrderItem belongs to Order
-      - [ ] OrderItem belongs to Product
-  - [ ] Cart
-    - [ ] cart_id
-    - [ ] created_at
-    - [ ] Relationship
-      - [ ] A cart belongs to a User
-      - [ ] A cart has many CartItems
-  - [ ] CartItem
-    - [ ] cart_item_id
-    - [ ] quantity
-    - [ ] relationship
-      - [ ] CartItem belongs to Cart
-      - [ ] CartItem belongs to Product
-  - [ ] Inventory
-    - [ ] inventory_id
-    - [ ] stock_level
-    - [ ] reorder_level
-    - [ ] relationship
-      - [ ] Inventory belongs to Product
-  - [ ] Admin
-    - [ ] admin_id
-    - [ ] name
-    - [ ] email
-    - [ ] role
-    - [ ] Relationship
-      - [ ] Admin manages Products
-      - [ ] Admin manages Users
-      - [ ] Admin manages Catergories
-  - [ ] Retailer
-    - [ ] retailer_id
-    - [ ] name
-    - [ ] email
-    - [ ] store_name
-    - [ ] Relationship
-      - [ ] Retailer owns many Products
-      - [ ] Retailer view Orders from their products
-      - [ ] Retailer Upates inventory
-  - [ ] Payment
-    - [ ] payment_id
-    - [ ] method (card, paypal)
-    - [ ] status
-    - [ ] amount
-    - [ ] transaction_date
-    - [ ] Relationship
-      - [ ] Payment belongs to Order
-  - [ ] Shipping
-    - [ ] shipping_id
-    - [ ] address
-    - [ ] shipping_method
-    - [ ] shipping_date
-    - [ ] delivery_date
-    - [ ] status
-    - [ ] relationship
-      - [ ] Shipping belongs to Order
-  - [ ] Tracking
-    - [ ] tracking_id
-    - [ ] tracking_number
-    - [ ] status
-    - [ ] last_location
-    - [ ] updated_at
-    - [ ] Relationship
-      - [ ] Tracking belongs to Shipping
+- [ ] Data Models & Structure: Database Structure (Class Diagram)
+  User
+  - user_id
+  - name
+  - email
+  - password
+  - phone
+  Relationship
+  - A User has many Orders
+  - A User has one Cart
+  - A User has many Addresses
+  - A User has many Payments
+  - A User has many UserActivityLogs
+  
+  Address
+  - address_id
+  - user_id
+  - street
+  - city
+  - postcode
+  - country
+  Relationship
+  - Address belongs to User
+  - Address may be used by Order (delivery_address_id)
+  
+  Product
+  - product_id
+  - name
+  - description
+  - price
+  - nutritional_info_id
+  - category_id
+  Relationship
+  - A Product belongs to a Category
+  - A Product has one NutritionalInfo
+  - A Product has one Inventory
+  - A Product appears in many OrderItems
+  - A Product appears in many CartItems
+  - A Product has many StockLogs
+  - A Product belongs to a Retailer
+  
+  Category
+  - category_id
+  - name
+  Relationship
+  - A Category contains many Products
+  
+  Order
+  - order_id
+  - user_id
+  - order_date
+  - status
+  - total_amount
+  - delivery_address_id
+  Relationship
+  - An Order belongs to a User
+  - An Order has many OrderItems
+  - An Order has one Payment
+  - An Order has one Shipping
+  - An Order may have many Notifications
+  
+  OrderItem
+  - order_item_id
+  - order_id
+  - product_id
+  - quantity
+  - price
+  Relationship
+  - OrderItem belongs to Order
+  - OrderItem belongs to Product
+  
+  Cart
+  - cart_id
+  - user_id
+  - created_at
+  Relationship
+  - A Cart belongs to a User
+  - A Cart has many CartItems
+  
+  CartItem
+  - cart_item_id
+  - cart_id
+  - product_id
+  - quantity
+  Relationship
+  - CartItem belongs to Cart
+  - CartItem belongs to Product
+  
+  Inventory
+  - inventory_id
+  - product_id
+  - stock_level
+  - reorder_level
+  Relationship
+  - Inventory belongs to Product
+  - Inventory has many StockLogs
+  
+  StockLog
+  - stock_log_id
+  - product_id
+  - inventory_id
+  - change_amount
+  - reason
+  - created_at
+  Relationship
+  - StockLog belongs to Product
+  - StockLog belongs to Inventory
+  
+  NutritionalInfo
+  - nutritional_info_id
+  - calories
+  - fat
+  - protein
+  - carbs
+  Relationship
+  - NutritionalInfo belongs to Product
+  
+  Payment
+  - payment_id
+  - order_id
+  - user_id
+  - method (card, paypal)
+  - status
+  - amount
+  - transaction_date
+  Relationship
+  - Payment belongs to Order
+  - Payment belongs to User
+  
+  Shipping
+  - shipping_id
+  - order_id
+  - address
+  - shipping_method
+  - shipping_date
+  - delivery_date
+  - status
+  Relationship
+  - Shipping belongs to Order
+  - Shipping has one Tracking
+  
+  Tracking
+  - tracking_id
+  - shipping_id
+  - tracking_number
+  - status
+  - last_location
+  - updated_at
+  Relationship
+  - Tracking belongs to Shipping
+  
+  Admin
+  - admin_id
+  - name
+  - email
+  - role
+  Relationship
+  - Admin manages Products
+  - Admin manages Users
+  - Admin manages Categories
+  
+  Retailer
+  - retailer_id
+  - name
+  - email
+  - store_name
+  Relationship
+  - Retailer owns many Products
+  - Retailer views Orders containing their Products
+  - Retailer updates Inventory
+
   - [ ] Use Case Diagram: (what action clients perform in the system):
     - [ ] User
       - [ ] Browsing products
