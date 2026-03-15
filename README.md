@@ -39,8 +39,7 @@ Links:
 
 ### **Business Requirements Plan & Documentation** (1.5 Hours)
 - - [ ] https://assets.asana.biz/m/2dcf4dfc471895ad/original/Business-Requirements-Document-Template-PDF.pdf
-- - [ ] Constraints (Social, political, economic, supply & chain, Technological)
-- - [ ] time, budget, skills, deadlines, resources, security and compliance
+- - [ ] Constraints (Social, political, economic, supply & chain, Technological) & time, budget, skills, deadlines, resources, security and compliance
 
 ### **Empathy Mapping**
 - - [ ] Create empathy maps for the main user groups (e.g., customers, support agents, managers). Each map should include:
@@ -430,7 +429,6 @@ LOW INTEREST -----------+----------- HIGH INTEREST
     - [ ] updated_at
     - [ ] Relationship
       - [ ] Tracking belongs to Shipping
-- [ ] System Procesess
   - [ ] Use Case Diagram: (what action clients perform in the system):
     - [ ] User
       - [ ] Browsing products
@@ -529,7 +527,49 @@ LOW INTEREST -----------+----------- HIGH INTEREST
   - [ ] track order
   - [ ] Paying
   - [ ] Shipping
-- [ ] Data Transmission (Communication Diagram)
+- [ ] Communication Diagram (Data Transmission) - Between Services
+  - [ ] Product Browsing & Inventory
+    - [ ] Frontend → Product Service: getProducts()
+    - [ ] Product Service → Inventory Service: checkStock(productId)
+    - [ ] Inventory Service → Product Service: stockLevel()
+
+  - [ ] Cart Operations
+    - [ ] Frontend → Cart Service: addItem(productId, qty)
+    - [ ] Cart Service → Product Service: validateProduct(productId)
+    - [ ] Cart Service → Inventory Service: reserveStock(productId, qty)
+    - [ ] Cart Service → Inventory Service: releaseStock(productId, qty)  # when removing items
+
+  - [ ] User Authentication & Profile
+    - [ ] Frontend → Auth Service: login(credentials)
+    - [ ] Auth Service → User Service: getUserProfile(userId)
+    - [ ] Frontend → User Service: updateAddress(userId)
+
+  - [ ] Checkout & Order Creation
+    - [ ] Frontend → Cart Service: getCart(userId)
+    - [ ] Cart Service → Order Service: createOrder(cartId)
+    - [ ] Order Service → Inventory Service: deductStock(orderItems)
+
+  - [ ] Payment Processing
+    - [ ] Order Service → Payment Service: createPaymentIntent(orderId)
+    - [ ] Payment Service → Payment Gateway (Stripe/PayPal): processPayment()
+    - [ ] Payment Gateway → Payment Service: paymentResult()
+    - [ ] Payment Service → Order Service: paymentConfirmed()
+    - [ ] Payment Service → Order Service: paymentFailed()
+
+  - [ ] Order Lifecycle & Delivery
+    - [ ] Order Service → Delivery Service: scheduleDelivery(orderId)
+    - [ ] Delivery Service → Order Service: deliveryStatusUpdate()
+
+  - [ ] Notifications
+    - [ ] Order Service → Notification Service: sendOrderConfirmation(orderId)
+    - [ ] Payment Service → Notification Service: sendPaymentReceipt(orderId)
+    - [ ] Delivery Service → Notification Service: sendDeliveryUpdate(orderId)
+
+  - [ ] Refunds & Cancellations (Optional)
+    - [ ] Frontend → Order Service: requestCancellation(orderId)
+    - [ ] Order Service → Payment Service: createRefund(orderId)
+    - [ ] Payment Service → Order Service: refundCompleted()
+    - [ ] Order Service → Notification Service: sendRefundNotification()
 
 
 ### Testing Strategy
@@ -554,7 +594,7 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 ### Technical Specifications
 - [ ] Hardware requirements
 - [ ] Software requirements
-- [ ] API endpoints
+- [ ] API endpoints (Documentation & API testing client)
 - [ ] Integration requirements
 - [ ] Performance requirements
 - [ ] Scalability considerations
