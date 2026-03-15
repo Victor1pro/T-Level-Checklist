@@ -206,8 +206,6 @@ LOW INTEREST -----------+----------- HIGH INTEREST
         - [ ] Training
         - [ ] Testing
     - [ ] Wider Issues
-        - [ ] 
-        
 - - [ ] **Regulatory Guidelines and Legal Requirements**
     - [ ] GDPR Compliances
     - [ ] CIA Triad & Data Security 
@@ -230,15 +228,56 @@ LOW INTEREST -----------+----------- HIGH INTEREST
     - [ ] The logo uses high contrast colours and a simple shape so it remains visible and recognisable for users with visual impairments.
 - [ ] Colour scheme:
   - [ ] I selected this colour scheme because __________________. Research into the __________________ industry shows that these colours are commonly used to represent __________________ and create a feeling of __________________.
-  - [ ] Colour sceheme: 3 columns (Colour, Hex Codes & Purpose) e.g Blue, #1A73E8, buttons, highlights
+  - [ ] Brand Colours:
+    - [ ] Colours e.g Forest Green, Olive Green, Warm Yellow, Citrus Orange, Stone, Charcoal, Sage Green, Terracotta
+    - [ ] Hex e.g #2F6B3F, #8A9A5B #F2C94C, #FF9F1C, #E5E2D5, #2E2E2E, #A3B18A, #C46D3B
+    - [ ] Usage e.g 1 Primary brand colour, 2 Secondary UI elements, 3 Highgights, icons, subtle accents, 4 CTA Buttons, promotionall elements, 5 Backgrounds, cards, containers, 6 Primary text, headers, 7 soft UI, tages, badges, 7, Premium accents, artisan products
+    - [ ] Contrast notes e.g Passes AA omn white and stone backgrounds, best for backgrounds & not body text, Avoid as text colour; use on dark backgrounds
   - [ ] Array
   - [ ] Object
   - [ ] WCAG contrast checks (as shown in PDF) use coolors & webaim accessibility
-- [ ] Typography choices:
-  - [ ] Primary font: Inter (Justify & inspiration) think about readability
-  - [ ] Secondary font: Roboto (Justify & inspiration) think about readability
-- [ ] Navigation bar design
+    - [ ] e.g Charcoal should be the default text colour
+    - [ ] Never use yellow or light green for text** — they fail WCAG contrast.
+    - [ ] Use Forest Green for buttons with white text** (passes AA).
+    - [ ] Use Stone or White as the main background** to keep the UI clean and accessible.
+        
+- [ ] Typography Guidelines:
+  - [ ] Recommended Typefaces:
+    - [ ] Primary font (Headings): Inter, Poppins or Source sans Pro  (Justify & inspiration) think about readability
+    - [ ] Body font: Inter, Nunito or Roboto (Justify & inspiration) think about readability
+  - [ ] Font Weights
+    - [ ] Headings: 600-700
+    - [ ] Body Text: 400-500
+    - [ ] Buttons e.g 600
+  - [ ] Minimum Accessible Sizes
+    - [ ] body Text: 16px
+    - [ ] Button: 16-18px
+    - [ ] Section headers: 20-24px
+    - [ ] Main-page titles: 32-40px
+  - [ ] Line height
+    - [ ] Body text: 1.5 - 1.7
+    - [ ] Headings: 1.2 - 1.3 
+- [ ] UI combnations
+  - [ ] Buttons
+    - [ ] Primary Buttons
+      - [ ] Background: Forest Green '#2F6B3F'
+      - [ ] Text: White '#FFFFFF'
+      - [ ] Contrast:
+    - [ ] Secondary Buttons
+      - [ ] Background-colour: Citrus Orange '#FF9F1C'
+      - [ ] Text: Charcoal '#2E2E2E'
+      - [ ] Contrast:
+  - [ ] Cards / Product Tiles
+    - [ ] Background: Stone '#E5E2D5'
+    - [ ] Title: Charcoal '#2E2E2E'
+    - [ ] Price: Forest Green '#2F6B3F'
+    - [ ] Tag / Badge: Sage Green '#A3B18A'
+- [ ] Brand personlaity Summary
+  - [ ] e.g This palette & Typography system communicates
+    - [ ] Freshness, sustainability, local authenticity, modern digital trust, Hgh reabiity and accessability
+
 - [ ] Full UI wireframes (Figma)
+  - [ ] Navigation bar design
   - [ ] Home page
   - [ ] checkout
   - [ ] product listing
@@ -255,10 +294,23 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 - [ ] High‑level architecture diagram
 - [ ] Client-side structure (React / HTML / CSS / JS)
 - [ ] Server-side structure (Node / Express / Python / PHP etc.)
-- [ ] API structure
+- [ ] API structure (Component Diagram)
+  - [ ] Frontend Web app
+  - [ ] Auth Service
+  - [ ] Product Service
+  - [ ] Cart Service
+  - [ ] Order Service
+  - [ ] Payment Service
+  - [ ] Notification Service
+  - [ ] Database Layer
+  - [ ] External Service
 - [ ] Backend file structure
 - [ ] Frontend file structure
 - [ ] Deployment diagram (local → production)
+  - [ ] Identify devices & nodes that are unique in your clinet & server processors in your system
+  - [ ] Highlight devices that are related to the behaviour of your system
+  - [ ] Model relationship between these processors and devices in the deployement diagram
+  - [ ] e.g http.exe deployed caching server (HTTP caching allows servers to store frequently accessed data, reducing load times and improving response times for user)
 - [ ] Technology stack justification
 
 
@@ -276,7 +328,7 @@ LOW INTEREST -----------+----------- HIGH INTEREST
   - [ ] 
 - [ ] Data validation rules
 - [ ] Data protection considerations (GDPR)
-- [ ] Data Models: Database structure (Class Diagram)
+- [ ] Data Models & Structure: Database structure (Class Diagram)
   - [ ] User
     - [ ] user_id
     - [ ] name
@@ -402,7 +454,8 @@ LOW INTEREST -----------+----------- HIGH INTEREST
       - [ ] View orders from customers
       - [ ] Confirm shipping
       - [ ] Update order status
-      - [ ] View sals reports
+      - [ ] View sales reports
+
 ### Algorithms & Logic
 - [ ] Flowcharts
   - [ ] Register User account (full)
@@ -432,7 +485,28 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 
 
 ### System Processes
-
+- [ ] API behaviour ()
+  - [ ] Product service
+    - [ ] GET/products
+    - [ ] GET/products/{id}
+    - [ ] GET/categories
+  - [ ] Cart Service
+    - [ ] POST/cart/items
+    - [ ] PATCH/cart/items/{id}
+    - [ ] DELETE/cart/items/{id}
+    - [ ] GET/cart
+  - [ ] Order Service
+    - [ ] POST/orders
+    - [ ] GET/orders/{id}
+    - [ ] GET/orders?user_id=...
+  - [ ] User & Auth service
+    - [ ] POST/auth/login
+    - [ ] POST/auth/register
+    - [ ] GET/users/me
+    - [ ] POST/users/me/address
+  - [ ] Notification Service
+    - [ ] POST/notifications/order-confirmation
+    - [ ] POST/notifications/order-status
 - [ ] Activity Diagram: (Busienss flow, API request Processing steps, workflows)
   - [ ] Inventory management
     - [ ] start
