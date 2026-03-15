@@ -228,6 +228,21 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 - [ ] Colour scheme:
   - [ ] I selected this colour scheme because __________________. Research into the __________________ industry shows that these colours are commonly used to represent __________________ and create a feeling of __________________.
   - [ ] Brand Colours:
+    - [ ] Primary Colours (Brand Identity)
+      - Forest Green — #2F6B3F
+      - Olive Green — #8A9A5B
+      
+      Secondary Colours (Accents & Highlights)
+      - Warm Yellow — #F2C94C
+      - Citrus Orange — #FF9F1C
+      - Terracotta — #C46D3B
+      
+      Tertiary Colours (Soft Supporting Tones)
+      - Sage Green — #A3B18A
+      
+      Neutral Colours (Backgrounds, Text, UI Structure)
+      - Stone — #E5E2D5
+      - Charcoal — #2E2E2E
     - [ ] Colours e.g Forest Green, Olive Green, Warm Yellow, Citrus Orange, Stone, Charcoal, Sage Green, Terracotta
     - [ ] Hex e.g #2F6B3F, #8A9A5B #F2C94C, #FF9F1C, #E5E2D5, #2E2E2E, #A3B18A, #C46D3B
     - [ ] Usage e.g 1 Primary brand colour, 2 Secondary UI elements, 3 Highgights, icons, subtle accents, 4 CTA Buttons, promotionall elements, 5 Backgrounds, cards, containers, 6 Primary text, headers, 7 soft UI, tages, badges, 7, Premium accents, artisan products
