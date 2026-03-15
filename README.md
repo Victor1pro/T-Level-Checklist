@@ -302,6 +302,57 @@ LOW INTEREST -----------+----------- HIGH INTEREST
   - [ ] Admin stock dashboard
   - [ ] Admin order management
 - [ ] User flow diagrams
+  1. Landing / Home Page
+     - User visits homepage
+     - User can browse categories or search for products
+  
+  2. Product Browsing
+     - User selects a category
+     - User views product list
+     - User applies filters (price, category, availability)
+     - User selects a product
+  
+  3. Product Detail Page
+     - User views product details (price, description, nutritional info)
+     - User checks stock availability
+     - User adds product to cart
+  
+  4. Cart
+     - User views cart items
+     - User updates quantity or removes items
+     - User proceeds to checkout
+  
+  5. Authentication (If not logged in)
+     - User logs in or registers
+     - System redirects back to checkout
+  
+  6. Checkout
+     - User enters or selects delivery address
+     - User selects shipping method
+     - User reviews order summary
+     - User proceeds to payment
+  
+  7. Payment
+     - User selects payment method (card, PayPal, etc.)
+     - User completes payment
+     - Payment gateway returns success or failure
+  
+  8. Order Confirmation
+     - System creates order
+     - System deducts inventory
+     - User receives confirmation message/email
+     - User can view order details
+  
+  9. Shipping & Tracking
+     - Order is processed by retailer
+     - Delivery provider updates tracking
+     - User views tracking status
+  
+  10. Order Completion
+     - Order delivered
+     - User receives delivery confirmation
+     - User may leave a review or reorder
+
 - [ ] Accessibility features (ARIA labels, contrast, layout spacing)
 
 ### System Architecture
