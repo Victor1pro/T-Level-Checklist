@@ -314,14 +314,64 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 
 
 ### Data Design & Requirements
-- [ ] Entity Relationship Diagram (ERD)
-  - [ ] ORDER e.g 
-  - [ ] USER 
-  - [ ] ORDER_ITEM
-  - [ ] PRODUCT
-  - [ ] STOCK_LOG
-  - [ ] NUTRITIONAL_INFO
-  - [ ] USER_ACTIVITY_LOG
+Entity Relationship Diagram (ERD)
+Core Entities e.g
+- USER
+  - [1] USER has many ADDRESS
+  - [1] USER has many CART
+  - [1] USER has many ORDER
+  - [1] USER has many PAYMENT
+  - [1] USER has many USER_ACTIVITY_LOG
+- ADDRESS
+  - [M] ADDRESS belongs to USER
+  - [M] ADDRESS may be linked to ORDER (delivery_address_id)
+Product & Inventory
+- PRODUCT
+  - [1] PRODUCT belongs to CATEGORY
+  - [1] PRODUCT has one NUTRITIONAL_INFO
+  - [1] PRODUCT has one INVENTORY
+  - [1] PRODUCT has many STOCK_LOG
+  - [1] PRODUCT appears in many CART_ITEM
+  - [1] PRODUCT appears in many ORDER_ITEM
+- CATEGORY
+  - [1] CATEGORY has many PRODUCT
+- NUTRITIONAL_INFO
+  - [1] NUTRITIONAL_INFO belongs to PRODUCT
+- INVENTORY
+  - [1] INVENTORY belongs to PRODUCT
+  - [1] INVENTORY has many STOCK_LOG
+- STOCK_LOG
+  - [M] STOCK_LOG belongs to PRODUCT
+  - [M] STOCK_LOG belongs to INVENTORY
+Cart & Checkout
+- CART
+  - [M] CART belongs to USER
+  - [1] CART has many CART_ITEM
+- CART_ITEM
+  - [M] CART_ITEM belongs to CART
+  - [M] CART_ITEM belongs to PRODUCT
+Orders & Payments
+- ORDER
+  - [M] ORDER belongs to USER
+  - [1] ORDER has many ORDER_ITEM
+  - [1] ORDER has one PAYMENT
+  - [1] ORDER has one DELIVERY
+  - [M] ORDER may reference ADDRESS (delivery_address_id)
+- ORDER_ITEM
+  - [M] ORDER_ITEM belongs to ORDER
+  - [M] ORDER_ITEM belongs to PRODUCT
+- PAYMENT
+  - [M] PAYMENT belongs to ORDER
+  - [M] PAYMENT belongs to USER
+- DELIVERY
+  - [M] DELIVERY belongs to ORDER
+Notifications & Logs
+- NOTIFICATION_LOG
+  - [M] NOTIFICATION_LOG belongs to USER
+  - [M] NOTIFICATION_LOG may reference ORDER
+- USER_ACTIVITY_LOG
+  - [M] USER_ACTIVITY_LOG belongs to USER
+
 - [ ] Data Flow Diagram (DFD Level 0 + Level 1)
 - [ ] Data Dictionary e.g
   - [ ] 
