@@ -443,6 +443,102 @@ Notifications & Logs
 - USER_ACTIVITY_LOG
   - [M] USER_ACTIVITY_LOG belongs to USER
 
+- [ ] Class diagram relationship
+- [ ] ## 1. One-to-One (1:1)
+**How to spot it:**
+- One record in Table A links to exactly one record in Table B.
+- Usually enforced with a UNIQUE foreign key.
+
+**In Class Diagram:**
+- Simple association (1..1 ↔ 1..1)
+
+**Examples in your model:**
+- Product → NutritionalInfo  
+- Order → Shipping  
+- Shipping → Tracking  
+- Product → Inventory
+
+---
+
+## 2. One-to-Many (1:N)
+**How to spot it:**
+- One record in Table A can have many in Table B.
+- Table B contains the foreign key.
+
+**In Class Diagram:**
+- Association with multiplicity (1 → *)  
+- Often becomes **composition** if the child cannot exist alone.
+
+**Examples in your model:**
+- User → Orders  
+- User → Addresses  
+- Category → Products  
+- Order → OrderItems  
+- Cart → CartItems  
+- Inventory → StockLogs
+
+---
+
+## 3. Many-to-Many (M:N)
+**How to spot it:**
+- Requires a **junction table**.
+- Neither table directly holds the foreign key.
+
+**In Class Diagram:**
+- Represented using an intermediate class.
+
+**Examples in your model:**
+- Product ↔ Order (via OrderItem)  
+- Product ↔ Cart (via CartItem)
+
+---
+
+## 4. Composition (Strong Ownership)
+**How to spot it:**
+- Child cannot exist without the parent.
+- Deleting the parent deletes the child.
+- Usually 1:N with strong dependency.
+
+**In Class Diagram:**
+- Filled diamond (◆)
+
+**Examples:**
+- Order ◆→ OrderItem  
+- Cart ◆→ CartItem  
+- Product ◆→ Inventory  
+- Inventory ◆→ StockLog  
+- Shipping ◆→ Tracking  
+- Product ◆→ NutritionalInfo
+
+---
+
+## 5. Aggregation (Weak Whole–Part)
+**How to spot it:**
+- Parent groups children, but children can exist independently.
+
+**In Class Diagram:**
+- Hollow diamond (◇)
+
+**Examples (optional depending on interpretation):**
+- Category ◇→ Product  
+- User ◇→ Address
+
+---
+
+## 6. Simple Association
+**How to spot it:**
+- Two entities are related but independent.
+- No lifecycle dependency.
+
+**In Class Diagram:**
+- Plain line with multiplicities.
+
+**Examples:**
+- User ↔ Payment  
+- Product ↔ Retailer  
+- Order ↔ Payment  
+- Order ↔ Shipping
+  
 - [ ] Data Flow Diagram (DFD Level 0 + Level 1)
   - [ ] Data Flow Diagram (DFD) — Level 0 (Context Diagram)
     External Entities
