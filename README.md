@@ -936,8 +936,73 @@ Notifications & Logs
 - [ ] Maintainability
 - [ ] Usability
 
+## 🎯 Design Justification
 
-### Design Justification
+### 1. Purpose of the Design
+Explain the goal of this design and the problem it solves.  
+Example: Improve checkout efficiency and reduce user friction.
+
+---
+
+### 2. Requirements Addressed
+List the functional and non-functional requirements this design satisfies.
+
+- F1:  
+- F2:  
+- NF1:  
+- NF2:  
+
+---
+
+### 3. Alternatives Considered
+Briefly describe other design options and why they were not chosen.
+
+- Option A:  
+  - Reason rejected:  
+- Option B:  
+  - Reason rejected:  
+
+---
+
+### 4. Rationale for Final Choice
+Explain why the chosen design is the most suitable option.
+
+- Usability benefits:  
+- Accessibility improvements:  
+- Technical feasibility:  
+- Alignment with industry standards:  
+
+---
+
+### 5. Supporting Principles / Evidence
+Reference design principles, guidelines, or research that support your decision.
+
+- Nielsen’s heuristics:  
+- WCAG accessibility guidelines:  
+- User testing insights:  
+- Industry benchmarks:  
+
+---
+
+### 6. Impact on User Experience
+Describe how this design improves clarity, efficiency, or satisfaction.
+
+- Reduced cognitive load  
+- Faster task completion  
+- Clearer navigation  
+- Better accessibility  
+
+---
+
+### 7. Impact on System / Business Goals
+Explain how the design supports wider objectives.
+
+- Increased conversion rate  
+- Reduced errors  
+- Improved maintainability  
+- Better scalability  
+
+---
 
 
 ## Activity Task2 Checklist
