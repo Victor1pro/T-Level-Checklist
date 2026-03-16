@@ -291,8 +291,13 @@ LOW INTEREST -----------+----------- HIGH INTEREST
     - [ ] Freshness, sustainability, local authenticity, modern digital trust, Hgh reabiity and accessability
 
 - [ ] Full UI wireframes (Figma)
-  - [ ] Navigation bar design
-  - [ ] Home page
+  - [ ] Navigation bar design:
+    - [ ] Structure: Logo left, manu items, search bar, Basket icon, Login/register
+    - [ ] Colour use:
+      - [ ] Background Forest green or Stone, 2
+      - [ ] Text/Icons Charcoal onlight background & Stone orn dark background
+      - [ ] Active linkl Warm yellow
+      - [ ] CTA (Basket): Forets green with stone text
   - [ ] checkout
   - [ ] product listing
   - [ ] Product details
