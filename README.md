@@ -214,11 +214,13 @@ LOW INTEREST -----------+----------- HIGH INTEREST
 
 ### **Appendix**
     - [ ] (Site link) - Topic Description
-    - [ ] (Site link) - https://www.figma.com/community/file/1615573609495795525
+
 
 
 
 # 📘 Activity B Checklist — Design & Development
+
+https://www.figma.com/community/file/1615573609495795525
 
 ### Visual & Interface Design
 - [ ] Logo design
