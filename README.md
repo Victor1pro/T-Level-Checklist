@@ -1012,6 +1012,235 @@ Explain how the design supports wider objectives.
 
 - Link - https://docs.google.com/forms/d/e/1FAIpQLSfb8Kn4EXTVWQh6mFjch24xHy8sw3kUAhsgeLN9UyQpLtEeBw/viewform?usp=publish-editor
 
+# TASK 3a CHECKLIST (WITH EXAMPLES)
 
-### Aim of the Feedback
-- [ ] 
+---
+
+## SECTION 1 — FEEDBACK PLAN
+
+### Aims & Purpose
+- [ ] Clear aim explaining **WHY** you are collecting feedback  
+  > Example: To evaluate how effectively users can navigate and complete tasks in my prototype.
+
+- [ ] Aim linked to improving usability, performance, accessibility, navigation, etc.  
+  > Example: The feedback will help improve navigation clarity and reduce user errors.
+
+- [ ] Clear explanation of **WHAT** you want to find out  
+  > Example: I want to find out if users can complete tasks without confusion.
+
+- [ ] Clear link to **iterative development**  
+  > Example: Results will be used to refine UI layout and fix usability issues.
+
+---
+
+### Target Users
+- [ ] Technical users identified (roles + numbers)  
+  > Example: 3 developers with experience in Python and UI design.
+
+- [ ] Non-technical users identified (roles + numbers)  
+  > Example: 5 general users with no programming experience.
+
+- [ ] Justification for **WHY** each group is chosen  
+  > Example: Developers evaluate performance, while general users assess usability.
+
+- [ ] Explanation of different insights  
+  > Example: Technical users focus on backend logic, non-technical users focus on ease of use.
+
+---
+
+### Feedback Methods
+- [ ] Surveys  
+  > Example: Google Forms with rating scales and short answers.
+
+- [ ] Interviews  
+  > Example: 10-minute semi-structured interviews after testing.
+
+- [ ] Observation  
+  > Example: Watching users complete tasks and noting errors/time taken.
+
+- [ ] Justification  
+  > Example: Surveys give measurable data, interviews provide depth, observation shows real behaviour.
+
+- [ ] Link to aims  
+  > Example: All methods assess usability and navigation effectiveness.
+
+---
+
+### Practical Session Plan
+- [ ] Location  
+  > Example: School computer lab.
+
+- [ ] Device / environment  
+  > Example: Desktop PCs using Chrome browser.
+
+- [ ] Tasks  
+  > Example: Log in, navigate to dashboard, complete a form.
+
+- [ ] Time allocation  
+  > Example: 15 minutes per user.
+
+- [ ] Prototype presentation  
+  > Example: Hosted website link shared with users.
+
+---
+
+### Data Recording Plan
+- [ ] Survey storage  
+  > Example: Google Forms responses exported to Excel.
+
+- [ ] Interview recording  
+  > Example: Written notes or audio recording.
+
+- [ ] Observation logging  
+  > Example: Checklist of errors and completion times.
+
+- [ ] Secure storage  
+  > Example: Files stored in password-protected folder.
+
+---
+
+### Data Analysis Plan
+- [ ] Calculate averages  
+  > Example: Average rating for navigation = 3.2/5.
+
+- [ ] Identify lowest scores  
+  > Example: Navigation received lowest score.
+
+- [ ] Group themes  
+  > Example: “Confusing layout” appears in multiple responses.
+
+- [ ] Compare user groups  
+  > Example: Non-technical users struggled more than technical users.
+
+- [ ] Triangulation  
+  > Example: Low score + theme + quote confirms navigation issue.
+
+---
+
+## SECTION 2 — SURVEY QUESTIONS
+
+### Technical User Survey
+- [ ] 5 rating questions  
+  > Example: Rate system performance (1–5).
+
+- [ ] 3–5 open questions  
+  > Example: What improvements would you suggest?
+
+- [ ] Covers technical areas  
+  > Example: Code efficiency, reliability.
+
+- [ ] No vague questions  
+  > Bad: “Is it good?”  
+  > Good: “How efficient is the system performance?”
+
+- [ ] Prototype-specific  
+  > Example: “How well does the login system handle errors?”
+
+---
+
+### Non-Technical User Survey
+- [ ] 5 rating questions  
+  > Example: Rate ease of navigation.
+
+- [ ] 3–5 qualitative questions  
+  > Example: What did you find confusing?
+
+- [ ] Covers usability/design  
+  > Example: Layout clarity, readability.
+
+- [ ] Clear wording  
+  > Example: Avoid technical jargon.
+
+- [ ] Linked to tasks  
+  > Example: “Was it easy to complete the form?”
+
+---
+
+## SECTION 3 — INTERVIEW QUESTIONS
+
+### Technical User Interview
+- [ ] 5+ open questions  
+  > Example: How efficient is the system’s logic?
+
+- [ ] Probing questions  
+  > Example: Why do you think that?
+
+- [ ] Covers technical aspects  
+  > Example: Bugs, performance, maintainability.
+
+- [ ] Prototype-specific  
+  > Example: “How well does the database handle input?”
+
+---
+
+### Non-Technical User Interview
+- [ ] 5+ open questions  
+  > Example: How easy was it to navigate?
+
+- [ ] Covers usability  
+  > Example: Clarity, accessibility.
+
+- [ ] Includes probes  
+  > Example: Can you explain what confused you?
+
+- [ ] Not repetitive  
+
+---
+
+## SECTION 4 — OBSERVATION PLAN
+- [ ] Measurable tasks  
+  > Example: Complete registration in under 2 minutes.
+
+- [ ] Tasks linked to features  
+  > Example: Use search function.
+
+- [ ] Indicators  
+  > Example: Hesitation, errors, asking for help.
+
+- [ ] Observer focus  
+  > Example: Track time and mistakes.
+
+---
+
+## SECTION 5 — ANALYSIS SETUP
+
+### Quantitative Analysis
+- [ ] Averages calculated  
+  > Example: Mean score = 4.1
+
+- [ ] Compare groups  
+  > Example: Technical = 4.5, Non-technical = 3.2
+
+- [ ] Lowest scores  
+  > Example: Navigation lowest at 2.9
+
+### Qualitative Analysis
+- [ ] Themes identified  
+  > Example: “Hard to navigate”
+
+- [ ] Themes explained  
+  > Example: Users struggled to find key buttons.
+
+- [ ] Quotes used  
+  > Example: “I couldn’t find the submit button.”
+
+### Triangulation
+- [ ] Survey score  
+- [ ] Interview theme  
+- [ ] Quote/observation  
+  > Example: Low score + confusion theme + quote confirms issue.
+
+---
+
+## SECTION 6 — OVERALL QUALITY CHECK
+
+### Professionalism
+- [ ] No missing sections  
+- [ ] No template text left  
+- [ ] No spelling/grammar errors  
+- [ ] Formal tone  
+
+### Alignment With Prototype
+- [ ] Linked to your prototype  
+- [ ] Questions relate to features  
+- [ ] No generic content  
