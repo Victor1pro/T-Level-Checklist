@@ -1397,6 +1397,71 @@ The prototype meets most acceptance criteria, with improvements planned based on
 
 Overall, the prototype successfully delivers a clean, functional, and user‑friendly green‑energy booking website. The assets support the brand identity, and the layout is accessible, modern, and easy to navigate. Functional and non‑functional requirements are met, and user feedback has been positive.
 
+
+
+
+
+
+
+# **Task 3b – Checklist**
+
+## **A. Assets & Content**
+
+| **Requirement** | **Completed?** |
+|-----------------|----------------|
+| Explained why each key asset was chosen | ☐ |
+| Explained why alternatives were rejected | ☐ |
+| Stated how sources were valid & reliable | ☐ |
+| Included legal issues (copyright, licences) | ☐ |
+| Included ethical issues (accessibility, inclusivity) | ☐ |
+
+---
+
+## **B. Requirements Evaluation**
+
+| **Requirement** | **Completed?** |
+|-----------------|----------------|
+| Evaluated how well functional requirements were met | ☐ |
+| Evaluated how well non‑functional requirements were met | ☐ |
+| Judged performance against KPIs | ☐ |
+| Evaluated user acceptance criteria using evidence | ☐ |
+| Used Task 3a data to support claims | ☐ |
+
+---
+
+## **C. Use of Evidence (Task 3a Link)**
+
+| **Requirement** | **Completed?** |
+|-----------------|----------------|
+| Referred to survey scores correctly | ☐ |
+| Used interview themes | ☐ |
+| Included at least one user quote | ☐ |
+| Used observational notes | ☐ |
+| Showed triangulation (score + theme + quote) | ☐ |
+
+---
+
+## **D. Improvements**
+
+| **Requirement** | **Completed?** |
+|-----------------|----------------|
+| Listed realistic improvements | ☐ |
+| Each improvement supported by Task 3a evidence | ☐ |
+| Explained why improvements matter | ☐ |
+| Showed how improvements help users | ☐ |
+
+---
+
+## **E. Writing Quality**
+
+| **Requirement** | **Completed?** |
+|-----------------|----------------|
+| Clear structure (intro → evaluation → improvements → conclusion) | ☐ |
+| Professional wording | ☐ |
+| Full sentences & paragraphs | ☐ |
+| No bullet‑point‑only answers | ☐ |
+
+
 Areas for development include improving confirmation messages, enhancing the admin table, and expanding homepage content. These improvements will make the website more informative, efficient, and satisfying for both users and administrators.
 
 
