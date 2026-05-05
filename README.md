@@ -1244,3 +1244,160 @@ Explain how the design supports wider objectives.
 - [ ] Linked to your prototype  
 - [ ] Questions relate to features  
 - [ ] No generic content  
+
+# **Task 3b – Evaluation of Prototype Digital Solution**
+
+## **1. Introduction**
+
+### **What is your prototype?**
+My prototype is an interactive green‑energy booking website (**ROLSA Technologies**) that allows users to schedule eco‑friendly services such as solar panel consultations, EV‑charging installations, and home‑efficiency assessments. The prototype includes a functional booking form, an admin table for viewing submissions, and a consistent green‑themed interface designed to feel modern, trustworthy, and environmentally focused.
+
+### **What does this evaluation cover?**
+This evaluation covers the quality of assets used, the validity and reliability of content sources, legal and ethical considerations, and how well the prototype meets the functional and non‑functional requirements. It also includes evidence‑based improvements based on user feedback gathered in Task 3a.
+
+---
+
+## **2. Evaluation of Assets and Content**
+
+### **2.1 Why You Chose Your Assets**
+
+**Fonts:**  
+Clean sans‑serif fonts were used for readability and a modern feel. They also support accessibility on screens.
+
+**Colours:**  
+A green palette (#2E7D32, #A5D6A7) reinforces the eco‑friendly theme. White and dark grey improve contrast and readability.
+
+**Icons:**  
+Simple, flat icons were used to support navigation without distracting from content.
+
+**Text & Data:**  
+Text was written to be concise, friendly, and informative. Service descriptions were simplified to help users quickly understand what they are booking.
+
+**Layout:**  
+The layout uses clear sections, centred content, and consistent spacing. The booking form and admin table follow a logical structure to reduce cognitive load.
+
+---
+
+### **2.2 Why You Rejected Other Options**
+
+- Bright or neon colours were rejected because they clashed with the eco‑friendly theme and reduced readability.  
+- Serif fonts were avoided because they looked less modern and were harder to read on mobile devices.  
+- Stock images with watermarks or low resolution were rejected to maintain professionalism.  
+- Overly complex layouts were avoided because they made the booking process slower and less intuitive.
+
+---
+
+### **2.3 Validity and Reliability of Sources**
+
+- No images were used, but if needed, licence‑free sources such as **Unsplash** or **Pexels** would be used.  
+- Icons were sourced from the open‑license library **Font Awesome**.
+
+---
+
+### **2.4 Legal & Ethical Considerations**
+
+**Copyright:**  
+Only licence‑free or openly licensed assets were used. No copyrighted material was copied without permission.
+
+**Licences:**  
+Assets were selected from platforms that allow free commercial use. Attribution was provided where required.
+
+**GDPR:**  
+The booking form collects minimal data (name, email, service type). Data is stored securely and only used for its intended purpose.
+
+**Accessibility:**  
+- High‑contrast colours  
+- Alt text for images  
+- Clear headings  
+- Logical tab order  
+- Sans‑serif fonts  
+These choices support WCAG accessibility guidelines.
+
+**Inclusivity:**  
+Language is neutral and welcoming. The design avoids assumptions about user background or technical knowledge. Forms use inclusive labels and avoid unnecessary personal questions.
+
+---
+
+## **3. How Your Prototype Meets Requirements**
+
+### **3.1 Functional Requirements**
+
+The prototype successfully meets the key functional requirements:
+
+- Users can submit a booking form.  
+- Data is stored and displayed in the admin table.  
+- Admins can view all bookings in a structured layout.  
+- Navigation links work across all pages.  
+- The website loads through Flask, not as static files.
+
+---
+
+### **3.2 Non‑Functional Requirements**
+
+**Usability:** Simple layout, clear labels, and consistent design make the site easy to use.  
+**Performance:** Pages load quickly due to lightweight assets.  
+**Security:** No unnecessary sensitive data is stored; form inputs are validated.  
+**Maintainability:** Clean folder structure and consistent naming conventions support easy updates.  
+**Aesthetics:** Green theme, modern fonts, and clean layout create a professional appearance.
+
+---
+
+### **3.3 KPIs**
+
+| **KPI** | **How It Is Met** |
+|--------|--------------------|
+| User completion rate | Simple booking form increases likelihood of successful submissions. |
+| Admin efficiency | Clear table layout helps admins quickly review bookings. |
+| User satisfaction | Positive feedback from Task 3a shows users found the site easy to navigate. |
+| Accessibility compliance | High contrast, alt text, and readable fonts support accessibility. |
+
+---
+
+### **3.4 User Acceptance Criteria (from Task 3a)**
+
+Feedback from Task 3a showed:
+
+- Users liked the clean layout and green theme.  
+- The booking form was easy to understand.  
+- Some users wanted clearer confirmation messages.  
+- A few users suggested adding sorting or filtering to the admin table.  
+- One user mentioned the homepage could include more detail about services.
+
+The prototype meets most acceptance criteria, with improvements planned based on this feedback.
+
+---
+
+## **4. Improvements (Evidence‑Based)**
+
+### **Improvement 1: Add Confirmation Message After Booking**
+**What will you improve?** Add a clear “Booking Successful” confirmation page or pop‑up.  
+**Why?** Users were unsure whether their booking was submitted.  
+**Evidence?** Multiple users requested clearer feedback after clicking submit.  
+**Benefit?** Increases confidence and reduces confusion.
+
+---
+
+### **Improvement 2: Add Sorting and Search to Admin Table**
+**What will you improve?** Add sorting by date, name, or service type, plus a search bar.  
+**Why?** Admins need to manage bookings more efficiently.  
+**Evidence?** Admin testers said the table was functional but could be more powerful.  
+**Benefit?** Faster admin workflow and fewer errors.
+
+---
+
+### **Improvement 3: Expand Homepage Content**
+**What will you improve?** Add more detail about services, benefits, and pricing.  
+**Why?** Some users wanted more information before booking.  
+**Evidence?** Feedback mentioned the homepage felt “a bit empty”.  
+**Benefit?** Users can make informed decisions and feel more confident.
+
+---
+
+## **5. Conclusion**
+
+Overall, the prototype successfully delivers a clean, functional, and user‑friendly green‑energy booking website. The assets support the brand identity, and the layout is accessible, modern, and easy to navigate. Functional and non‑functional requirements are met, and user feedback has been positive.
+
+Areas for development include improving confirmation messages, enhancing the admin table, and expanding homepage content. These improvements will make the website more informative, efficient, and satisfying for both users and administrators.
+
+
+
